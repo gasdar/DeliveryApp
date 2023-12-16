@@ -1,4 +1,5 @@
-@use 'variables' as v; 
+@use 'variables' as v;
+@use 'mixins' as m;
 
 html {
     font-size: 62.5%;
@@ -40,7 +41,13 @@ h1 {
     font-size: 4rem;
 }
 h2 {
-    font-size: 3.6rem;
+    color: v.$blanco;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.5rem;
+    @include m.desktop {
+        font-size: 3.5rem;
+    }
 }
 h3 {
     font-size: 3.2rem;
