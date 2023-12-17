@@ -6,4 +6,9 @@
     &__heading {
         color: v.$negro;
     }
+    &__grid {
+        @include m.desktop{
+            @include m.grid(5, 2rem);
+        }
+    }
 }
